@@ -5,7 +5,9 @@
 </template>
 
 <style scoped>
-
+    .vue-map-container{
+        z-index:-1;
+    }
 </style>
 
 <script>

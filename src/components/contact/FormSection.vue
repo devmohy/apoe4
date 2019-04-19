@@ -2,46 +2,37 @@
     <div class="container-fluid">
         <div class="container">
             <!-- ALL COMPONENT MARKUP GOES HERE-->
-            
-            <p class="contact" style="text-align:center; margin-top:30px">Contact us to find out more on how we can help you better</p>
-            	<br></br>
 						<form action="#">
-
-								<section class="details">
-									<div>
-										<div>
-											<label for="name">Name</label>
-										</div>
-										<input type="text" 
-											name="name" 
-											class="user-name"
-											placeholder="Name" 
-										>
+							<div class="container">
+								<legend style="font-size:2rem; font-weight:bold" class="text-center">Contact Us</legend>
+								<p>Contact us to find out more or how we can help you better</p>
+								<br><br>
+								<div class="row" style=text-align:left;>
+									<div class="form-group col-sm-6">
+										<label class="text-left" for="name">Name</label>
+										<input type="email" class="form-control" id="name" aria-describedby="nameHelp">
 									</div>
 
-									<div>
-										<div>
-											<label for="email">Email</label>
-										</div>
-										<input type="email" 
-											name="email" 
-											class="user-email"
-											placeholder="Email" 
-										>
+									<div class="form-group col-sm-6">
+										<label class="text-left" for="exampleInputEmail">Email address</label>
+										<input type="email" class="form-control" id="exampleInputEmail" aria-describedby="emailHelp">
 									</div>
-								</section>
-
-								<div>
-									<div>
-										<label for="message">Message</label>
+								</div>
+									<br>
+								<div class="row">
+									<div class="form-group col-sm-12">
+										<label class="text-left" for="message">Message</label>
+										<textarea class="form-control" id="message" rows="15"></textarea>
 									</div>
-									<textarea name="message" id="" cols="70" rows="20"></textarea>
 								</div>
 
-								<div>
-									<input type="submit" value="SEND" id="sub">
+								<div class="row">
+									<div class="form-group col-sm-12">
+										<button class="btn btn-lg btn-primary">Send</button>
+									</div>
 								</div>
-						
+
+							</div>			
 					</form>
 				
         </div>
@@ -50,47 +41,20 @@
 
 <style scoped>
 
-	section {
-		display: flex;
-		justify-content: space-between;
-		width: 50%;
-		margin: 5% auto;
-		text-align: center;
-	}
-
-
 	form {
-		border: 2px solid #F2F2F2;
+		padding:50px;
 		width: 80%;
 		text-align: center;
-		margin: auto;
+		box-shadow: 2px 2px 10px gray;
+		margin: -150px auto auto auto;
+		background:#ffffff;
+		border-radius:10px;
 	}
-	.user-name, .user-email {
-		width: 100%;
-	}
-
+	
 	p{
-		font-size:2em;
+		font-size:1em;
 		font-weight:bold;
 	}
-
-	#sub {
-		border: 1px solid #1B8CFB;
-		background-color: #1B8CFB;
-		color: white;
-		border-radius: 10px 10px 10px 10px;
-		width:15%;
-		font-weight: 600;
-	  font-family: 'Open Sans', sans-serif;
-	  font-size: 18px;
-	  text-align: center;
-	  text-indent: 5px;
-	  cursor: pointer;
-	  display: block;
-	  margin: 5px auto;
-	  margin-bottom: 40px;
-	}
-
 	label {
 		font-size: 1.3rem;
 	}
@@ -100,23 +64,9 @@
 		font-weight:600;
 	}
 
-	textarea {
-		-webkit-appearance: none;
-		-moz-appearance: none;
+	textarea,input {
 		background-color:#F2F2F2;
-		appearance: none;
-		font: 15px/1 'Open Sans', sans-serif;
-		color: #333;
-		-webkit-font-smoothing: antialiased;
-		-moz-osx-font-smoothing: grayscale;
-
-		border: 1px solid lightgrey;  
-		border-radius: 3px;   
-		box-shadow: none;   
-		outline: none;   
-		margin: 0;   
-		box-sizing: border-box; 
-		padding-bottom: 0;
+		
 	}
 
 </style>
